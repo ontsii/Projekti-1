@@ -80,36 +80,40 @@ p {
 }
 
 
-    .brand-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 40px;
-    }
+.brand-grid {
+  display: flex;
+  flex-wrap: wrap;          /* let them wrap if screen is narrow */
+  justify-content: center;  /* center them in the row */
+  gap: 30px;                /* space between tiles */
+  margin-top: 40px;
+}
 
-    .brand-tile {
-      text-align: center;
-      background-color: #f0eeee;
-      border-radius: 15px;
-      padding: 15px;
-      width: 140px;
-      transition: transform 0.3s ease;
-    }
+.brand-tile {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;   
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px;
+  width: 180px;          
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent;
+}
 
-    .brand-tile:hover {
-      transform: scale(1.05);
-    }
+.brand-tile:hover {
+  transform: scale(1.08);
+}
 
-    .brand-tile img {
-      width: 100px;
-      height: auto;
-      display: block;
-      margin: 0 auto 10px auto;
-    }
+.brand-tile img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.3)); /* glow behind logo */
+}
 
-    .brand-tile p {
-      color: black;
-      margin: 0;
-      font-weight: bold;
-    }
+.brand-tile p {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;  /* centered under logo now */
+  margin: 0;
+}
