@@ -78,3 +78,38 @@ p {
     line-height: 1.6;
     color: white;
 }
+
+
+    .brand-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .brand-tile {
+      text-align: center;
+      background-color: #f0eeee;
+      border-radius: 15px;
+      padding: 15px;
+      width: 140px;
+      transition: transform 0.3s ease;
+    }
+
+    .brand-tile:hover {
+      transform: scale(1.05);
+    }
+
+    .brand-tile img {
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+
+    .brand-tile p {
+      color: black;
+      margin: 0;
+      font-weight: bold;
+    }
